@@ -688,7 +688,7 @@ body {
   margin-right: 40px;
   font-family: Helvetica, sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: lighter;
   font-size: 19px;
   line-height: 22px;
   color: #FFFFFF;
@@ -699,7 +699,7 @@ body {
   left: 40px;
   font-family: Helvetica, sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: lighter;
   font-size: 19px;
   line-height: 22px;
   color: #FFFFFF;
@@ -781,7 +781,7 @@ body {
   margin-top: 60px;
   font-family: Helvetica, sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: lighter;
   font-size: 30px;
   line-height: 34px;
   color: #313131;
@@ -791,14 +791,14 @@ body {
   color: #104599;
   cursor: pointer;
 }
-.section15__left__tel:nth-child(1) {
+.section15__left__tel:nth-child(3) {
   margin-top: 15px;
 }
 .section15__left__mail {
   margin-top: 15px;
   font-family: Helvetica, sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: lighter;
   font-size: 30px;
   line-height: 34px;
   color: #313131;
