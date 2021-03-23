@@ -93,6 +93,12 @@ body
           width: 300px
           font-family: 'Open Sans', sans-serif
           font-weight: bold
+    div:nth-child(2)
+      p
+        br:nth-child(1)
+          display: inline
+        br:nth-child(2)
+          display: none
 .section2
   margin-top: 150px
   &__header
@@ -734,7 +740,6 @@ body
     margin: auto
     padding: 0
     max-width: none
-    border: 1px solid red
   .header
     &__top
       background: no-repeat right bottom url("../img/headerBG.png")
@@ -1275,9 +1280,7 @@ body
       a
         display: block
         margin-top: 48px
-        padding: 0
-        padding-top: 14px
-        padding-bottom: 10px
+        padding: 14px 0 10px 0
         text-align: center
         box-sizing: border-box
         text-decoration: none
@@ -1470,15 +1473,20 @@ body
 @media (max-width: 750px)
   .containerMy
     width: 360px
+    margin: auto
+    padding: 0
+    max-width: none
   .header
+    margin: 0
+    padding: 0
     &__top
-      background: no-repeat center bottom url("../img/1170/header__bg.png")
+      background: none
       p
-        transform: translateY(+55px)
-        width: 360px
-        font-size: 24px
-        line-height: 28px
-        padding: 170px 0 42px 0
+        width: 100%
+        font-size: 31px
+        line-height: 36px
+        padding: 0
+        margin-top: 129px
         text-align: center
         font-weight: normal
         color: #104599
@@ -1499,7 +1507,7 @@ body
     flex-direction: column
     align-items: center
     &__header
-      width: 90%
+      width: 95%
       font-family: "Open Sans", sans-serif
       font-style: normal
       font-weight: normal
@@ -1534,6 +1542,8 @@ body
         width: 360px
         p
           box-sizing: border-box
+          width: 289px
+          margin-top: 0
           margin-left: 21px
           margin-bottom: 0
           font-family: 'Open Sans', sans-serif
@@ -1548,6 +1558,13 @@ body
             width: 300px
             font-family: 'Open Sans', sans-serif
             font-weight: bold
+      div:nth-child(2)
+        width: 360px
+        p
+          br:nth-child(1)
+            display: none
+          br:nth-child(2)
+            display: inline
   .section2
     margin-top: 70px
     &__header
@@ -1567,7 +1584,8 @@ body
       .content1
         width: 360px
         height: 360px
-        background: url("../img/1170/section2__photo1.png")
+        background: url("../img/photo1.png")
+        background-size: 360px
       .content2
         display: flex
         flex-direction: column
@@ -1628,31 +1646,36 @@ body
       justify-content: space-between
       flex-wrap: nowrap
       div
-        padding: 0 10px
+        padding: 13px 0
         display: flex
         flex-direction: column
         align-items: center
         justify-content: center
         width: 360px
-        height: 80px
+        height: 45px
         box-sizing: border-box
-        border: 3px solid #104599
+        border: 1px solid #104599
         border-radius: 10px
         font-family: Helvetica, sans-serif
         font-style: normal
-        font-weight: bold
-        font-size: 18px
-        line-height: 21px
-        text-transform: uppercase
+        font-weight: normal
+        font-size: 14px
+        line-height: 19px
         text-align: center
         color: #104599
-        margin-bottom: 10px
+        margin-bottom: 15px
         transition: background .3s
         &:hover
           background: #104599
           color: #FFFFFF
+
+      div:nth-child(3)
+        span
+          &:after
+            right: -15px
+            top: 4px
   .section4
-    margin-top: 60px
+    margin-top: 70px
     &__header
       font-family: "Open Sans", sans-serif
       font-style: normal
@@ -1660,42 +1683,39 @@ body
       font-size: 24px
       line-height: 33px
       color: #104599
-    &__list
-      height: auto
-      margin-top: 30px
-      display: flex
-      flex-direction: column
-      flex-wrap: nowrap
-      &__item
-        background: no-repeat top left url("../img/check.png")
-        width: 360px
-        margin-right: 30px
-        margin-top: 10px
-        padding-left: 70px
-        margin-left: 5px
-        box-sizing: border-box
+    &__content
+      &__head
+        margin-top: 20px
         font-family: "Open Sans", sans-serif
         font-style: normal
         font-weight: normal
-        font-size: 14px
-        line-height: 19px
+        font-size: 19px
+        line-height: 26px
+        text-align: center
         color: #313131
-      &__lastItem
-        padding-left: 70px
-        margin-top: 35px
-        text-decoration: none
-        font-family: "Open Sans", sans-serif
-        font-style: normal
-        font-weight: bold
-        font-size: 18px
-        line-height: 25px
-        color: #313131
-        img
-          display: inline
-          margin-left: 7px
-        &:visited
+      &__list
+        height: auto
+        margin-top: 15px
+        display: flex
+        flex-direction: column
+        flex-wrap: nowrap
+        &.second
+          height: auto
+        &.third
+          height: auto
+        &__item
+          background: no-repeat top left url("../img/check.png")
+          width: 360px
+          margin-right: 30px
+          margin-top: 10px
+          padding-left: 70px
+          box-sizing: border-box
+          font-family: "Open Sans", sans-serif
+          font-style: normal
+          font-weight: 300
+          font-size: 14px
+          line-height: 19px
           color: #313131
-          text-decoration: none
   .section5
     margin-top: 70px
     &__header
@@ -1711,8 +1731,8 @@ body
       flex-direction: column
       align-items: center
       margin-top: 30px
-      height: 400px
-      background: no-repeat center bottom url("../img/750/section5__bg.png")
+      height: auto
+      background: none
       div
         display: flex
         flex-direction: row
@@ -1728,14 +1748,15 @@ body
           font-style: normal
           font-weight: bold
           font-size: 18px
-          line-height: 25px
+          line-height: 24px
           color: #000000
   .section6
-    margin-top: 60px
-    padding-bottom: 60px
+    margin-top: 45px
+    padding-bottom: 40px
     background: #E9E9E9
     backdrop-filter: blur(20px)
     &__header
+      text-align: center
       padding-top: 37px
       font-family: "Open Sans", sans-serif
       font-style: normal
@@ -1755,6 +1776,7 @@ body
         align-items: start
         margin-top: 20px
         margin-right: 30px
+        margin-bottom: 5px
         width: 360px
         img
           width: 55px
@@ -1779,13 +1801,13 @@ body
         font-family: "Open Sans", sans-serif
         font-style: normal
         font-weight: normal
-        font-size: 24px
-        line-height: 33px
+        font-size: 19px
+        line-height: 24px
         color: #104599
       p:nth-child(2)
         text-align: center
         width: 360px
-        margin-top: 15px
+        margin-top: 20px
         font-family: "Open Sans", sans-serif
         font-style: normal
         font-weight: normal
@@ -1796,14 +1818,15 @@ body
         margin-top: 41px
         display: inline-block
         text-decoration: none
-        padding: 13px 84px
+        padding: 13px 0
+        text-align: center
         background: #104599
         border: 2px solid #104599
         border-radius: 10px
         box-sizing: border-box
         font-family: "Open Sans", sans-serif
         font-style: normal
-        font-weight: normal
+        font-weight: 300
         font-size: 18px
         line-height: 25px
         color: #EDEDED
@@ -1811,7 +1834,7 @@ body
         &:hover
           box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25)
     &__form
-      margin-top: 50px
+      margin-top: 40px
       width: 360px
       form
         display: flex
@@ -1834,7 +1857,7 @@ body
             line-height: 16px
             color: #707070
         button
-          margin-top: 32px
+          margin-top: 15px
           background: #FFFFFF
           border-radius: 10px
           padding: 13px 0
@@ -1922,7 +1945,7 @@ body
         display: flex
         flex-direction: column
         align-items: center
-        height: 515px
+        height: auto
         box-sizing: border-box
         background: #FFFFFF
         padding: 0
@@ -1940,7 +1963,7 @@ body
           margin-right: 0
         p
           order: 1
-          width: 300px
+          width: 100%
           margin-top: 10px
           text-align: center
           font-family: "Open Sans", sans-serif
@@ -1960,7 +1983,7 @@ body
       text-align: center
       color: #104599
     &__content
-      margin-top: 30px
+      margin-top: 0
       display: flex
       flex-direction: row
       justify-content: space-between
@@ -1978,79 +2001,82 @@ body
           width: 166px
           height: 166px
           float: none
-        &__1
-          margin-left: 0
-          text-align: center
-          margin-top: 20px
-          font-family: "Open Sans", sans-serif
-          font-style: normal
-          font-weight: bold
-          font-size: 23px
-          line-height: 26px
-          color: #313131
-        &__2
-          margin-left: 0
-          margin-top: 5px
-          text-align: center
-          font-family: "Open Sans", sans-serif
-          font-style: normal
-          font-weight: normal
-          font-size: 19px
-          line-height: 22px
-          color: #313131
-        span
-          position: unset
-          bottom: 20px
-          margin-left: 0
-          margin-top: 15px
-          font-family: "Open Sans", sans-serif
-          font-style: normal
-          font-weight: normal
-          font-size: 14px
-          line-height: 16px
-          color: #313131
+        &__right
+          align-items: center
+          padding: 0
+          &__1
+            margin-left: 0
+            text-align: center
+            margin-top: 20px
+            font-family: "Open Sans", sans-serif
+            font-style: normal
+            font-weight: bold
+            font-size: 19px
+            line-height: 22px
+            color: #313131
+          &__2
+            margin-left: 0
+            margin-top: 5px
+            text-align: center
+            font-family: "Open Sans", sans-serif
+            font-style: normal
+            font-weight: normal
+            font-size: 14px
+            line-height: 16px
+            color: #313131
+          span
+            margin-left: 0
+            margin-top: 15px
+            font-family: "Open Sans", sans-serif
+            font-style: normal
+            font-weight: normal
+            font-size: 11px
+            line-height: 13px
+            color: #104599
   .section12
     display: flex
     flex-direction: column
     justify-content: space-between
     align-items: center
-    margin-top: 80px
+    margin-top: 70px
+    padding: 0
     &__left
       width: 360px
       display: flex
       flex-direction: column
       align-items: center
       p:nth-child(1)
-        width: 360px
+        width: 340px
         font-family: "Open Sans", sans-serif
         font-style: normal
         font-weight: normal
-        font-size: 24px
-        line-height: 33px
+        font-size: 30px
+        line-height: 34px
         text-align: center
         color: #104599
       p:nth-child(2)
         width: 360px
-        margin-top: 22px
+        margin-top: 30px
         font-family: "Open Sans", sans-serif
         font-style: normal
-        font-weight: normal
+        font-weight: 300
         font-size: 14px
         line-height: 17px
         text-align: center
         color: #313131
       p:nth-child(3)
         width: 360px
-        margin-top: 20px
+        margin-top: 14px
         font-family: "Open Sans", sans-serif
         font-style: normal
-        font-weight: normal
+        font-weight: 300
         font-size: 14px
         line-height: 17px
         text-align: center
         color: #313131
-        margin-bottom: 18px
+        margin-bottom: 0
       a
+        margin-top: 30px
         width: 100%
         text-align: center
         padding: 13px 0
@@ -2060,17 +2086,17 @@ body
         font-family: "Open Sans", sans-serif
         font-style: normal
         font-weight: normal
-        font-size: 19px
-        line-height: 26px
+        font-size: 14px
+        line-height: 19px
         color: #EDEDED
         transition: box-shadow 0.3s
         &:hover
           box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25)
         img
-          transform: translateY(+3px)
-          margin-right: 15px
-          width: 20px
-          height: 17px
+          transform: translateY(-1px)
+          margin-right: 25px
+          width: 29px
+          height: 25px
     &__right
       margin-top: 30px
       padding: 22px 0
@@ -2094,7 +2120,7 @@ body
     display: none
 
   .section13
-    margin-top: 50px
+    margin-top: 70px
     &__header
       font-family: "Open Sans", sans-serif
       font-style: normal
@@ -2117,91 +2143,40 @@ body
         height: 280px
         background: #104599
         margin-bottom: 20px
-        img
+        >img
+          object-fit: cover
           width: 360px
           height: 150px
-        p
-          width: 223px
-          text-align: center
-          margin-left: 0
-          margin-top: 20px
-          margin-right: 20px
-          font-family: Helvetica, sans-serif
-          font-style: normal
-          font-weight: normal
-          font-size: 14px
-          line-height: 16px
-          color: #FFFFFF
-        span
-          position: unset
-          margin-top: 36px
-          bottom: 20px
-          left: 20px
-          font-family: Helvetica, sans-serif
-          font-style: normal
-          font-weight: normal
-          font-size: 14px
-          line-height: 16px
-          color: #FFFFFF
-          img
-            width: 14px
-            height: 11px
-            margin-left: 5px
-  .section14
-    margin-top: 50px
-    display: flex
-    flex-direction: column
-    align-items: center
-    &__header
-      font-family: "Open Sans", sans-serif
-      font-style: normal
-      font-weight: normal
-      font-size: 24px
-      line-height: 33px
-      text-align: center
-      color: #104599
-    &__content
-      width: 360px
-      display: flex
-      flex-direction: column
-      align-items: center
-      &__head
-        width: 330px
-        text-align: center
-        margin-top: 30px
-        font-family: "Open Sans", sans-serif
-        font-style: normal
-        font-weight: normal
-        font-size: 24px
-        line-height: 33px
-        color: #313131
-      &__list
-        height: auto
-        margin-top: 30px
-        display: flex
-        flex-direction: column
-        flex-wrap: nowrap
-        &.second
-          height: auto
-        &.third
-          height: auto
-        &__item
-          background: no-repeat top left url("../img/check.png")
-          background-size: 30px 26px
-          width: 360px
-          margin-right: 0
-          margin-top: 10px
-          padding-left: 70px
-          box-sizing: border-box
-          font-family: "Open Sans", sans-serif
-          font-style: normal
-          font-weight: normal
-          font-size: 14px
-          line-height: 19px
-          color: #313131
+        &__bottom
+          height: 130px
+          padding: 17px 0 30px 0
+          display: flex
+          flex-direction: column
+          justify-content: space-between
+          align-items: center
+          p
+            text-align: center
+            font-family: Helvetica, sans-serif
+            font-style: normal
+            font-weight: normal
+            font-size: 14px
+            line-height: 16px
+            color: #FFFFFF
+            width: 223px
+          span
+            font-family: Helvetica, sans-serif
+            font-style: normal
+            font-weight: normal
+            font-size: 14px
+            line-height: 16px
+            color: #FFFFFF
+            img
+              margin-left: 10px
+              width: 14px
+              height: 11px
   .section15
-    margin-top: 70px
-    margin-bottom: 150px
+    margin-top: 50px
+    margin-bottom: 100px
     display: flex
     flex-direction: column
     justify-content: space-between
@@ -2213,7 +2188,7 @@ body
       align-items: center
       p
         text-align: center
-        margin-top: 25px
+        margin-top: 0
         font-family: "Open Sans", sans-serif
         font-style: normal
         font-weight: normal
@@ -2232,8 +2207,18 @@ body
         &:hover
           color: #104599
           cursor: pointer
-      &__tel:nth-child(3)
+      &__tel2
         margin-top: 5px
+        font-family: Helvetica, sans-serif
+        font-style: normal
+        font-weight: normal
+        font-size: 24px
+        line-height: 33px
+        color: #313131
+        transition: color .3s
+        &:hover
+          color: #104599
+          cursor: pointer
       &__mail
         margin-top: 5px
         font-family: Helvetica, sans-serif
@@ -2255,26 +2240,23 @@ body
     &__right
       margin-top: 24px
       width: 360px
-      height: 420px
-      background: #E9E9E9
+      height: auto
+      background: inherit
       border-radius: 10px
-      padding: 45px 20px
+      padding: 0
       box-sizing: border-box
       form
         display: flex
         flex-direction: column
-        label:nth-child(4)
-          input
-            padding-bottom: 40px
         label
           input
             margin-bottom: 15px
             border: none
+            border-bottom: 1px solid #104599
             width: 100%
             padding: 17px 32px
             box-sizing: border-box
             background-color: #FFFFFF
-            border-radius: 10px
             font-family: Helvetica, sans-serif
             font-style: normal
             font-weight: normal
@@ -2282,6 +2264,7 @@ body
             line-height: 16px
             color: #707070
         button
+          margin-top: 15px
           border: 2px solid #104599
           border-radius: 10px
           padding: 13px 0
