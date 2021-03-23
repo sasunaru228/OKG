@@ -1,10 +1,38 @@
+//@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap')
+@font-face
+  font-family: 'Open Sans'
+  src: url(../Fonts/OpenSans-Regular.ttf)
+  font-weight: normal
+@font-face
+  font-family: 'Open Sans'
+  src: url(../Fonts/OpenSans-Bold.ttf)
+  font-weight: bold
+@font-face
+  font-family: 'Open Sans'
+  src: url(../Fonts/OpenSans-Light.ttf)
+  font-weight: 300
+@font-face
+  font-family: 'Helvetica'
+  src: url(../Fonts/Helvetica.ttf)
+  font-weight: normal
+@font-face
+  font-family: 'Helvetica'
+  src: url(../Fonts/Helvetica_Bold.ttf)
+  font-weight: bold
+html, body
+  max-width: 100%
+  overflow-x: hidden
 *
   margin: 0
   padding: 0
-  font-family: Helvetica, sans-serif
-.container
+  font-family: 'Helvetica', sans-serif
+p
+  margin: 0
+.containerMy
   width: 1170px
   margin: auto
+  padding: 0
+  max-width: none
 body
   color: #FFFFFF
 .header
@@ -12,81 +40,65 @@ body
     background: right bottom no-repeat url("../img/headerBG.png")
     p
       font-style: normal
-      font-weight: lighter
-      font-size: 52px
-      line-height: 60px
+      font-weight: normal
+      font-size: 40px
+      line-height: 46px
       color: #104599
-      padding: 300px 0 42px 0
-      max-width: 770px
-  &__bottom
-    margin-top: 47px
-    display: flex
-    flex-direction: row
-    justify-content: space-between
-    flex-wrap: wrap
-    a
-      border-radius: 10px
-      text-decoration: none
-      background: linear-gradient(90deg, #104599 0%, #88CCB1 100%)
-      width: 370px
-      text-align: center
-      box-sizing: border-box
-      padding: 13px 0
-      margin-top: 20px
-      font-family: "Open Sans", sans-serif
-      font-style: normal
-      font-weight: lighter
-      font-size: 14px
-      line-height: 19px
-      color: #EDEDED
-      transition: background 1s
-      &:hover
-        background: linear-gradient(90deg, #104599 0%, #104599 100%)
+      padding: 331px 0 100px 0
+      width: 580px
 .section1
   margin-top: 150px
   &__header
-    width: 100%
-    font-family: "Open Sans", sans-serif
+    margin: 0
+    width: 1140px
+    font-family: 'Open Sans', sans-serif
     font-style: normal
-    font-weight: lighter
+    font-weight: normal
     font-size: 40px
     line-height: 54px
     color: #104599
   &__items
-    margin-top: 35px
+    margin-top: 60px
     display: flex
     flex-direction: row
     justify-content: space-between
     .item1
       img
-        width: 70px
-        height: 70px
+        width: 50px
+        height: 50px
     .item2
       img
-        width: 50px
-        height: 80px
+        width: 32px
+        height: 52px
     .item3
       img
-        width: 70px
-        height: 73px
+        width: 50px
+        height: 52px
     div
       display: flex
       flex-direction: row
       width: 370px
       p
-        margin-left: 30px
-        font-family: "Open Sans", sans-serif
+        box-sizing: border-box
+        margin-left: 21px
+        margin-bottom: 0
+        font-family: 'Open Sans', sans-serif
         font-style: normal
-        font-weight: lighter
+        font-weight: normal
         font-size: 18px
         line-height: 25px
         color: #313131
+        span
+          font-size: 17.1px
+          width: 300px
+          font-family: 'Open Sans', sans-serif
+          font-weight: bold
 .section2
   margin-top: 150px
   &__header
-    font-family: "Open Sans", sans-serif
+    font-family: 'Open Sans', sans-serif
     font-style: normal
-    font-weight: lighter
+    font-weight: normal
     font-size: 40px
     line-height: 54px
     color: #104599
@@ -104,17 +116,19 @@ body
       width: 570px
       height: 570px
       background: #104599
-      padding: 74px 74px
+      padding: 74px 70px
       &__1
         margin-top: 30px
+        margin-bottom: 0
         font-family: "Open Sans", sans-serif
         font-style: normal
-        font-weight: lighter
+        font-weight: 300
         font-size: 14px
         line-height: 19px
         color: #FFFFFF
       &__2
         margin-top: 50px
+        margin-bottom: 0
         text-align: right
         font-family: "Open Sans", sans-serif
         font-style: normal
@@ -123,10 +137,11 @@ body
         line-height: 31px
         color: #FFFFFF
       &__3
+        margin-bottom: 0
         text-align: right
         font-family: "Open Sans", sans-serif
         font-style: normal
-        font-weight: lighter
+        font-weight: normal
         font-size: 18px
         line-height: 25px
         color: #E4E4E4
@@ -135,7 +150,7 @@ body
   &__header
     font-family: "Open Sans", sans-serif
     font-style: normal
-    font-weight: lighter
+    font-weight: normal
     font-size: 40px
     line-height: 54px
     color: #104599
@@ -151,78 +166,90 @@ body
       align-items: center
       justify-content: center
       width: 370px
-      height: 150px
-      box-sizing: content-box
-      border: 3px solid #104599
+      //box-sizing: border-box
+      border: 1px solid #104599
       border-radius: 10px
-      font-family: Helvetica, sans-serif
-      font-style: normal
-      font-weight: bold
-      font-size: 24px
-      line-height: 28px
-      text-transform: uppercase
-      text-align: center
       color: #104599
-      margin-bottom: 35px
+      margin-bottom: 20px
       transition: background .3s
+      span
+        position: relative
+        font-family: "Open Sans", sans-serif
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 45px
+        &:after
+          display: none
+          content: ' '
+          position: absolute
+          margin-left: 10px
+          top: 17px
+          right: -20px
+          color: #FFFFFF
+          padding: 3px
+          background: no-repeat center url("../img/Vector.png")
+          width: 6px
+          height: 12px!important
       &:hover
         background: #104599
         color: #FFFFFF
+      &:hover span::after
+        display: block
 .section4
-  margin-top: 150px
+  margin-top: 100px
   &__header
     font-family: "Open Sans", sans-serif
     font-style: normal
-    font-weight: lighter
+    font-weight: normal
     font-size: 40px
     line-height: 54px
     color: #104599
-  &__list
-    height: 400px
-    margin-top: 60px
-    display: flex
-    flex-direction: column
-    flex-wrap: wrap
-    &__item
-      background: no-repeat top left url("../img/check.png")
-      width: 570px
-      margin-right: 30px
-      margin-top: 10px
-      padding-left: 100px
-      box-sizing: border-box
+  &__content
+    &__head
+      margin-top: 50px
       font-family: "Open Sans", sans-serif
       font-style: normal
-      font-weight: lighter
-      font-size: 18px
-      line-height: 25px
+      font-weight: normal
+      font-size: 31px
+      line-height: 42px
       color: #313131
-    &__lastItem
-      padding-left: 100px
-      margin-top: 35px
-      text-decoration: none
-      font-family: "Open Sans", sans-serif
-      font-style: normal
-      font-weight: bold
-      font-size: 18px
-      line-height: 25px
-      color: #313131
-      img
-        margin-left: 15px
-      &:visited
+    &__list
+      height: 450px
+      margin-top: 40px
+      display: flex
+      flex-direction: column
+      flex-wrap: wrap
+      &.second
+        height: 300px
+      &.third
+        height: 300px
+      &__item
+        background: no-repeat top left url("../img/check.png")
+        width: 570px
+        margin-right: 30px
+        margin-top: 10px
+        padding-left: 100px
+        box-sizing: border-box
+        font-family: "Open Sans", sans-serif
+        font-style: normal
+        font-weight: 300
+        font-size: 18px
+        line-height: 24px
         color: #313131
-        text-decoration: none
 .section5
   margin-top: 150px
   &__header
     font-family: "Open Sans", sans-serif
     font-style: normal
-    font-weight: lighter
+    font-weight: normal
     font-size: 40px
     line-height: 54px
     color: #104599
   &__content
+    padding-top: 44px
     margin-top: 100px
-    background: no-repeat bottom right url("../img/section5__bg.png")
+    background: no-repeat center right url("../img/section5__bg.png")
     div
       display: flex
       flex-direction: row
@@ -245,7 +272,7 @@ body
     padding-top: 60px
     font-family: "Open Sans", sans-serif
     font-style: normal
-    font-weight: lighter
+    font-weight: normal
     font-size: 40px
     line-height: 54px
     color: #104599
@@ -266,7 +293,7 @@ body
         margin-left: 35px
         font-family: "Open Sans", sans-serif
         font-style: normal
-        font-weight: lighter
+        font-weight: 300
         font-size: 23px
         line-height: 31px
         color: #313131
@@ -280,7 +307,7 @@ body
     p:nth-child(1)
       font-family: "Open Sans", sans-serif
       font-style: normal
-      font-weight: lighter
+      font-weight: normal
       font-size: 30px
       line-height: 41px
       color: #104599
@@ -289,12 +316,12 @@ body
       margin-top: 15px
       font-family: "Open Sans", sans-serif
       font-style: normal
-      font-weight: lighter
+      font-weight: 400
       font-size: 18px
       line-height: 25px
       color: #313131
     a
-      margin-top: 113px
+      margin-top: 100px
       display: inline-block
       text-decoration: none
       padding: 13px 90px
@@ -326,7 +353,7 @@ body
           padding-left: 40px
           border: none
           border-bottom: 1px solid #104599
-          margin-bottom: 20px
+          margin-bottom: 14px
           font-family: Helvetica, sans-serif
           font-style: normal
           font-weight: normal
@@ -334,7 +361,7 @@ body
           line-height: 16px
           color: #707070
       button
-        margin-top: 30px
+        margin-top: 10px
         background: #FFFFFF
         border-radius: 10px
         padding: 13px 0
@@ -353,10 +380,9 @@ body
 .section8
   margin-top: 150px
   &__header
-    padding-top: 60px
     font-family: "Open Sans", sans-serif
     font-style: normal
-    font-weight: lighter
+    font-weight: normal
     font-size: 40px
     line-height: 54px
     color: #104599
@@ -379,8 +405,10 @@ body
       transition: all .3s
       &:hover
         background-color: #104599
-        p
-          color: #FFFFFF!important
+      &:hover p:nth-child(1)
+        color: #FFFFFF
+      &:hover p:nth-child(2)
+        color: #FFFFFF
       p:nth-child(1)
         font-family: "Open Sans", sans-serif
         font-style: normal
@@ -393,7 +421,7 @@ body
         margin-top: 20px
         font-family: "Open Sans", sans-serif
         font-style: normal
-        font-weight: lighter
+        font-weight: 300
         font-size: 19px
         line-height: 26px
         color: #313131
@@ -403,7 +431,7 @@ body
   &__header
     font-family: "Open Sans", sans-serif
     font-style: normal
-    font-weight: lighter
+    font-weight: normal
     font-size: 40px
     line-height: 54px
     color: #104599
@@ -428,16 +456,20 @@ body
         margin-top: 80px
         font-family: "Open Sans", sans-serif
         font-style: normal
-        font-weight: lighter
+        font-weight: normal
         font-size: 14px
         line-height: 19px
         color: #313131
+.modal-IMG
+  padding: 0
+  margin: 0
+  width: 100%
 .section10
   margin-top: 150px
   &__header
     font-family: "Open Sans", sans-serif
     font-style: normal
-    font-weight: lighter
+    font-weight: normal
     font-size: 40px
     line-height: 54px
     color: #104599
@@ -452,54 +484,58 @@ body
       height: 270px
       margin-bottom: 85px
       box-sizing: border-box
+      display: flex
+      flex-direction: row
       img
         float: left
-      &__1
-        margin-left: 300px
-        margin-top: 135px
-        font-family: "Open Sans", sans-serif
-        font-style: normal
-        font-weight: bold
-        font-size: 23px
-        line-height: 31px
-        color: #313131
-      &__2
-        margin-left: 300px
-        margin-top: 5px
-        font-family: "Open Sans", sans-serif
-        font-style: normal
-        font-weight: lighter
-        font-size: 19px
-        line-height: 23px
-        color: #313131
-      span
-        position: relative
-        bottom: 20px
-        margin-left: 300px
-        font-family: "Open Sans", sans-serif
-        font-style: normal
-        font-weight: normal
-        font-size: 14px
-        line-height: 19px
-        color: #313131
+      &__right
+        padding-left: 30px
+        display: flex
+        flex-direction: column
+        justify-content: flex-end
+        &__1
+          font-family: "Open Sans", sans-serif
+          font-style: normal
+          font-weight: bold
+          font-size: 23px
+          line-height: 31px
+          color: #313131
+        &__2
+          margin-top: 5px
+          font-family: "Open Sans", sans-serif
+          font-style: normal
+          font-weight: normal
+          font-size: 19px
+          line-height: 24px
+          color: #313131
+        span
+          margin-top: 15px
+          font-family: "Open Sans", sans-serif
+          font-style: normal
+          font-weight: normal
+          font-size: 14px
+          line-height: 19px
+          color: #104599
 .section12
   display: flex
   flex-direction: row
   justify-content: space-between
   margin-top: 166px
+  padding: 35px 0
+  box-sizing: border-box
   &__left
     width: 600px
     p:nth-child(1)
-      width: 468px
+      width: 350px
       font-family: "Open Sans", sans-serif
       font-style: normal
-      font-weight: lighter
+      font-weight: normal
       font-size: 40px
       line-height: 45px
       color: #104599
     p:nth-child(2)
       width: 468px
-      margin-top: 30px
+      margin-top: 60px
       font-family: "Open Sans", sans-serif
       font-style: normal
       font-weight: normal
@@ -515,7 +551,7 @@ body
       font-size: 18px
       line-height: 21px
       color: #313131
-      margin-bottom: 30px
+      margin-bottom: 60px
     a
       padding: 13px 42px
       text-decoration: none
@@ -523,7 +559,7 @@ body
       border-radius: 10px
       font-family: "Open Sans", sans-serif
       font-style: normal
-      font-weight: lighter
+      font-weight: normal
       font-size: 19px
       line-height: 26px
       color: #EDEDED
@@ -531,12 +567,12 @@ body
       &:hover
         box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25)
       img
-        transform: translateY(+7px)
+        transform: translateY(-2px)
         margin-right: 25px
         width: 33px
         height: 28px
   &__right
-    padding: 35px 0
+    padding: 0
     width: 570px
     height: 526px
     box-sizing: border-box
@@ -557,7 +593,7 @@ body
   &__header
     font-family: "Open Sans", sans-serif
     font-style: normal
-    font-weight: lighter
+    font-weight: normal
     font-size: 40px
     line-height: 54px
     color: #104599
@@ -567,74 +603,31 @@ body
     flex-direction: row
     justify-content: space-between
     &__item
-      position: relative
       width: 370px
       height: 490px
       background: #104599
-      p
-        margin-left: 40px
-        margin-top: 35px
-        margin-right: 40px
-        font-family: Helvetica, sans-serif
-        font-style: normal
-        font-weight: lighter
-        font-size: 19px
-        line-height: 22px
-        color: #FFFFFF
-      span
-        position: absolute
-        bottom: 30px
-        left: 40px
-        font-family: Helvetica, sans-serif
-        font-style: normal
-        font-weight: lighter
-        font-size: 19px
-        line-height: 22px
-        color: #FFFFFF
-        img
-          margin-left: 10px
-
-.section14
-  margin-top: 150px
-  &__header
-    font-family: "Open Sans", sans-serif
-    font-style: normal
-    font-weight: lighter
-    font-size: 40px
-    line-height: 54px
-    color: #104599
-  &__content
-    &__head
-      margin-top: 60px
-      font-family: "Open Sans", sans-serif
-      font-style: normal
-      font-weight: normal
-      font-size: 31px
-      line-height: 42px
-      color: #313131
-    &__list
-      height: 420px
-      margin-top: 60px
-      display: flex
-      flex-direction: column
-      flex-wrap: wrap
-      &.second
-        height: 300px
-      &.third
-        height: 300px
-      &__item
-        background: no-repeat top left url("../img/check.png")
-        width: 570px
-        margin-right: 30px
-        margin-top: 10px
-        padding-left: 100px
-        box-sizing: border-box
-        font-family: "Open Sans", sans-serif
-        font-style: normal
-        font-weight: lighter
-        font-size: 18px
-        line-height: 25px
-        color: #313131
+      &__bottom
+        height: 190px
+        padding: 40px 30px 32px 40px
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        p
+          font-family: Helvetica, sans-serif
+          font-style: normal
+          font-weight: normal
+          font-size: 19px
+          line-height: 22px
+          color: #FFFFFF
+        span
+          font-family: Helvetica, sans-serif
+          font-style: normal
+          font-weight: normal
+          font-size: 19px
+          line-height: 22px
+          color: #FFFFFF
+          img
+            margin-left: 10px
 .section15
   margin-top: 150px
   margin-bottom: 150px
@@ -649,38 +642,48 @@ body
       margin-top: 25px
       font-family: "Open Sans", sans-serif
       font-style: normal
-      font-weight: lighter
+      font-weight: normal
       font-size: 30px
       line-height: 41px
       color: #104599
     &__tel
-      margin-top: 60px
+      margin-top: 46px
       font-family: Helvetica, sans-serif
       font-style: normal
-      font-weight: lighter
-      font-size: 30px
-      line-height: 34px
-      color: #313131
+      font-weight: normal
+      font-size: 18px
+      line-height: 25px
+      color: #313131!important
       transition: color .3s
       &:hover
-        color: #104599
+        color: #104599!important
         cursor: pointer
-    &__tel:nth-child(3)
-      margin-top: 15px
-    &__mail
-      margin-top: 15px
+    &__tel2
+      margin-top: 5px
       font-family: Helvetica, sans-serif
       font-style: normal
-      font-weight: lighter
-      font-size: 30px
-      line-height: 34px
-      color: #313131
+      font-weight: normal
+      font-size: 18px
+      line-height: 25px
+      color: #313131!important
       transition: color .3s
       &:hover
-        color: #104599
+        color: #104599!important
+        cursor: pointer
+    &__mail
+      margin-top: 5px
+      font-family: Helvetica, sans-serif
+      font-style: normal
+      font-weight: normal
+      font-size: 18px
+      line-height: 25px
+      color: #313131!important
+      transition: color .3s
+      &:hover
+        color: #104599!important
         cursor: pointer
     &__icons
-      margin-top: 30px
+      margin-top: 46px
       display: flex
       flex-direction: row
       a
@@ -688,25 +691,20 @@ body
   &__right
     width: 570px
     height: 425px
-    background: #E9E9E9
-    border-radius: 10px
     padding: 45px 70px
     box-sizing: border-box
     form
       display: flex
       flex-direction: column
-      label:nth-child(4)
-        input
-          padding-bottom: 40px
       label
         input
           margin-bottom: 15px
           border: none
+          border-bottom: 1px solid #104599
           width: 100%
           padding: 17px 32px
           box-sizing: border-box
           background-color: #FFFFFF
-          border-radius: 10px
           font-family: Helvetica, sans-serif
           font-style: normal
           font-weight: normal
@@ -716,6 +714,7 @@ body
       button
         border: 2px solid #104599
         border-radius: 10px
+        background-color: inherit
         padding: 13px 0
         box-sizing: border-box
         font-family: "Open Sans", sans-serif
@@ -728,32 +727,30 @@ body
         &:hover
           background: #104599
           color: #FFFFFF
+//////////////////////////////////////////   1170    /////////////////////////////////////////////////////
 @media (max-width: 1170px)
-  .container
+  .containerMy
     width: 750px
+    margin: auto
+    padding: 0
+    max-width: none
+    border: 1px solid red
   .header
     &__top
-      background: no-repeat right bottom url("../img/1170/header__bg.png")
+      background: no-repeat right bottom url("../img/headerBG.png")
+      background-size: 358px 245px
       p
-        width: 450px
-        font-size: 31px
-        line-height: 36px
-        padding: 165px 0 42px 0
-    &__bottom
-      margin-top: 47px
-      display: flex
-      flex-direction: row
-      justify-content: space-between
-      flex-wrap: wrap
-      a
-        width: 230px
+        width: 442px
+        font-size: 30px
+        line-height: 34px
+        padding: 167px 0 72px 0
   .section1
     margin-top: 100px
     &__header
-      width: 90%
+      width: 100%
       font-family: "Open Sans", sans-serif
       font-style: normal
-      font-weight: lighter
+      font-weight: normal
       font-size: 30px
       line-height: 36px
       color: #104599
@@ -777,24 +774,32 @@ body
       div
         display: flex
         flex-direction: column
-        width: 230px
+        width: 237px
         p
-
-          width: 220px
+          box-sizing: border-box
           margin-left: 0
           margin-top: 20px
-          font-family: "Open Sans", sans-serif
+          margin-bottom: 0
+          font-family: 'Open Sans', sans-serif
           font-style: normal
-          font-weight: lighter
+          font-weight: normal
           font-size: 14px
           line-height: 19px
           color: #313131
+          span
+            font-size: 14px
+            line-height: 19px
+            width: 300px
+            font-family: 'Open Sans', sans-serif
+            font-weight: bold
+      div:nth-child(2)
+        width: 230px
   .section2
     margin-top: 100px
     &__header
       font-family: "Open Sans", sans-serif
       font-style: normal
-      font-weight: lighter
+      font-weight: normal
       font-size: 30px
       line-height: 41px
       color: #104599
@@ -806,7 +811,8 @@ body
       .content1
         width: 362px
         height: 362px
-        background: url("../img/1170/section2__photo1.png")
+        background: url("../img/photo1.png")
+        background-size: 362px 362px
       .content2
         box-sizing: border-box
         width: 362px
@@ -817,10 +823,10 @@ body
           width: 76px
           height: 27px
         &__1
-          margin-top: 30px
+          margin-top: 10px
           font-family: "Open Sans", sans-serif
           font-style: normal
-          font-weight: lighter
+          font-weight: normal
           font-size: 11px
           line-height: 15px
           color: #FFFFFF
@@ -834,10 +840,11 @@ body
           line-height: 25px
           color: #FFFFFF
         &__3
+          margin-top: 5px
           text-align: right
           font-family: "Open Sans", sans-serif
           font-style: normal
-          font-weight: lighter
+          font-weight: 300
           font-size: 14px
           line-height: 19px
           color: #E4E4E4
@@ -846,7 +853,7 @@ body
     &__header
       font-family: "Open Sans", sans-serif
       font-style: normal
-      font-weight: lighter
+      font-weight: normal
       font-size: 30px
       line-height: 41px
       color: #104599
@@ -857,91 +864,108 @@ body
       justify-content: space-between
       flex-wrap: wrap
       div
-        padding: 0 10px
         display: flex
         flex-direction: column
         align-items: center
         justify-content: center
-        width: 230px
-        height: 100px
+        width: 236px
+        height: 45px
         box-sizing: border-box
-        border: 3px solid #104599
+        border: 1px solid #104599
         border-radius: 10px
-        font-family: Helvetica, sans-serif
-        font-style: normal
-        font-weight: bold
-        font-size: 18px
-        line-height: 21px
-        text-transform: uppercase
-        text-align: center
         color: #104599
         margin-bottom: 20px
         transition: background .3s
+        span
+          position: relative
+          font-family: "Open Sans", sans-serif
+          font-style: normal
+          font-weight: normal
+          font-size: 14px
+          line-height: 19px
+          text-align: center
+          &:after
+            display: none
+            content: ' '
+            position: absolute
+            margin-left: 10px
+            top: 4px
+            right: -15px
+            color: #FFFFFF
+            padding: 3px
+            background: no-repeat center url("../img/Vector.png")
+            width: 6px
+            height: 12px!important
         &:hover
           background: #104599
           color: #FFFFFF
+        &:hover span::after
+          display: block
+      div:nth-child(3)
+        span
+          &:after
+            right: 30px
+            top: 14px
   .section4
-    margin-top: 80px
+    margin-top: 100px
     &__header
       font-family: "Open Sans", sans-serif
       font-style: normal
-      font-weight: lighter
+      font-weight: normal
       font-size: 30px
       line-height: 41px
       color: #104599
-    &__list
-      height: 450px
-      margin-top: 30px
-      display: flex
-      flex-direction: column
-      flex-wrap: wrap
-      &__item
-        background: no-repeat top left url("../img/check.png")
-        width: 360px
-        margin-right: 30px
-        margin-top: 10px
-        padding-left: 70px
-        margin-left: 5px
-        box-sizing: border-box
+    &__content
+      &__head
+        margin-top: 20px
         font-family: "Open Sans", sans-serif
         font-style: normal
-        font-weight: lighter
-        font-size: 14px
-        line-height: 19px
+        font-weight: normal
+        font-size: 24px
+        line-height: 42px
         color: #313131
-      &__lastItem
-        padding-left: 70px
-        margin-top: 35px
-        text-decoration: none
-        font-family: "Open Sans", sans-serif
-        font-style: normal
-        font-weight: bold
-        font-size: 18px
-        line-height: 25px
-        color: #313131
-        img
-          display: none
-          margin-left: 15px
-        &:visited
+      &__list
+        height: 400px
+        margin-top: 15px
+        display: flex
+        flex-direction: column
+        flex-wrap: wrap
+        &.second
+          height: 220px
+        &.third
+          height: 260px
+        &__item
+          background: no-repeat top left url("../img/check.png")
+          width: 360px
+          margin-right: 30px
+          margin-top: 10px
+          padding-left: 70px
+          box-sizing: border-box
+          font-family: "Open Sans", sans-serif
+          font-style: normal
+          font-weight: 300
+          font-size: 14px
+          line-height: 19px
           color: #313131
-          text-decoration: none
   .section5
     margin-top: 100px
     &__header
       font-family: "Open Sans", sans-serif
       font-style: normal
-      font-weight: lighter
+      font-weight: normal
       font-size: 30px
       line-height: 41px
       color: #104599
     &__content
+      padding-top: 0
       margin-top: 30px
-      background: no-repeat center right url("../img/1170/section5__bg.png")
+      background: no-repeat center right url("../img/section5__bg.png")
+      background-size: 359px 245px
       div
         display: flex
         flex-direction: row
         align-items: center
-        padding-bottom: 44px
+        padding-bottom: 25px
         img
           height: 55px
           width: 55px
@@ -955,20 +979,20 @@ body
           line-height: 25px
           color: #000000
   .section6
-    margin-top: 60px
-    padding-bottom: 60px
+    margin-top: 100px
+    padding-bottom: 52px
     background: #E9E9E9
     backdrop-filter: blur(20px)
     &__header
-      padding-top: 60px
+      padding-top: 52px
       font-family: "Open Sans", sans-serif
       font-style: normal
-      font-weight: lighter
+      font-weight: normal
       font-size: 30px
       line-height: 41px
       color: #104599
     &__content
-      height: 300px
+      height: 265px
       margin-top: 30px
       display: flex
       flex-direction: column
@@ -977,7 +1001,8 @@ body
         display: flex
         flex-direction: row
         align-items: start
-        margin-top: 20px
+        margin-top: 0
+        margin-bottom: 20px
         margin-right: 30px
         width: 360px
         img
@@ -987,7 +1012,7 @@ body
           margin-left: 16px
           font-family: "Open Sans", sans-serif
           font-style: normal
-          font-weight: lighter
+          font-weight: 300
           font-size: 18px
           line-height: 25px
           color: #313131
@@ -1001,7 +1026,7 @@ body
       p:nth-child(1)
         font-family: "Open Sans", sans-serif
         font-style: normal
-        font-weight: lighter
+        font-weight: normal
         font-size: 24px
         line-height: 33px
         color: #104599
@@ -1010,7 +1035,7 @@ body
         margin-top: 15px
         font-family: "Open Sans", sans-serif
         font-style: normal
-        font-weight: lighter
+        font-weight: normal
         font-size: 18px
         line-height: 21px
         color: #313131
@@ -1018,7 +1043,9 @@ body
         margin-top: 91px
         display: inline-block
         text-decoration: none
-        padding: 13px 84px
+        padding: 13px 0
+        width: 100%
+        text-align: center
         background: #104599
         border: 2px solid #104599
         border-radius: 10px
@@ -1038,10 +1065,11 @@ body
         display: flex
         flex-direction: column
         label
+          margin: 0
           width: 100%
           input
             width: 100%
-            padding-top: 15px
+            padding-top: 20px
             padding-bottom: 15px
             box-sizing: border-box
             padding-left: 30px
@@ -1055,7 +1083,7 @@ body
             line-height: 16px
             color: #707070
         button
-          margin-top: 32px
+          margin-top: 12px
           background: #FFFFFF
           border-radius: 10px
           padding: 13px 0
@@ -1074,10 +1102,10 @@ body
   .section8
     margin-top: 100px
     &__header
-      padding-top: 60px
+      padding-top: 0
       font-family: "Open Sans", sans-serif
       font-style: normal
-      font-weight: lighter
+      font-weight: normal
       font-size: 30px
       line-height: 41px
       color: #104599
@@ -1096,7 +1124,7 @@ body
         border: 3px solid #104599
         border-radius: 10px
         box-sizing: border-box
-        margin-bottom: 40px
+        margin-bottom: 20px
         transition: all .3s
         &:hover
           background-color: #104599
@@ -1111,32 +1139,31 @@ body
           color: #313131
           transition: all .3s
         p:nth-child(2)
-          margin-top: 20px
+          margin-top: 15px
           font-family: "Open Sans", sans-serif
           font-style: normal
-          font-weight: lighter
+          font-weight: normal
           font-size: 14px
           line-height: 19px
           color: #313131
           transition: all .3s
   .section9
-    margin-top: 60px
+    margin-top: 100px
     &__header
       font-family: "Open Sans", sans-serif
       font-style: normal
-      font-weight: lighter
+      font-weight: normal
       font-size: 30px
       line-height: 41px
       color: #104599
     &__content
-      margin-top: 30px
+      margin-top: 0
       display: flex
       flex-direction: column
       align-items: center
       justify-content: space-between
-      &__item:nth-child(2)
-        margin-top: 30px
       &__item
+        margin-top: 30px
         width: 750px
         height: 515px
         box-sizing: border-box
@@ -1156,7 +1183,7 @@ body
           margin-top: 80px
           font-family: "Open Sans", sans-serif
           font-style: normal
-          font-weight: lighter
+          font-weight: normal
           font-size: 14px
           line-height: 19px
           color: #313131
@@ -1165,7 +1192,7 @@ body
     &__header
       font-family: "Open Sans", sans-serif
       font-style: normal
-      font-weight: lighter
+      font-weight: normal
       font-size: 30px
       line-height: 41px
       color: #104599
@@ -1182,53 +1209,53 @@ body
         box-sizing: border-box
         img
           float: left
-        &__1
-          margin-left: 300px
-          margin-top: 135px
-          font-family: "Open Sans", sans-serif
-          font-style: normal
-          font-weight: bold
-          font-size: 23px
-          line-height: 26px
-          color: #313131
-        &__2
-          margin-left: 300px
-          margin-top: 5px
-          font-family: "Open Sans", sans-serif
-          font-style: normal
-          font-weight: lighter
-          font-size: 19px
-          line-height: 22px
-          color: #313131
-        span
-          position: relative
-          bottom: 20px
-          margin-left: 300px
-          font-family: "Open Sans", sans-serif
-          font-style: normal
-          font-weight: normal
-          font-size: 14px
-          line-height: 16px
-          color: #313131
+        &__right
+          padding-left: 30px
+          display: flex
+          flex-direction: column
+          justify-content: flex-end
+          &__1
+            font-family: "Open Sans", sans-serif
+            font-style: normal
+            font-weight: bold
+            font-size: 23px
+            line-height: 26px
+            color: #313131
+          &__2
+            margin-top: 5px
+            font-family: "Open Sans", sans-serif
+            font-style: normal
+            font-weight: normal
+            font-size: 19px
+            line-height: 22px
+            color: #313131
+          span
+            margin-top: 15px
+            font-family: "Open Sans", sans-serif
+            font-style: normal
+            font-weight: normal
+            font-size: 14px
+            line-height: 16px
+            color: #104599
   .section12
     display: flex
     flex-direction: row
     justify-content: space-between
-    align-items: center
-    margin-top: 110px
+    align-items: start
+    margin-top: 100px
     &__left
       width: 360px
       p:nth-child(1)
-        width: 360px
+        width: 330px
         font-family: "Open Sans", sans-serif
         font-style: normal
-        font-weight: lighter
+        font-weight: normal
         font-size: 30px
         line-height: 34px
         color: #104599
       p:nth-child(2)
         width: 360px
-        margin-top: 22px
+        margin-top: 39px
         font-family: "Open Sans", sans-serif
         font-style: normal
         font-weight: normal
@@ -1237,35 +1264,41 @@ body
         color: #313131
       p:nth-child(3)
         width: 360px
-        margin-top: 20px
+        margin-top: 14px
         font-family: "Open Sans", sans-serif
         font-style: normal
         font-weight: normal
         font-size: 14px
         line-height: 17px
         color: #313131
-        margin-bottom: 18px
+        margin-bottom: 0
       a
-        padding: 13px 42px
+        display: block
+        margin-top: 48px
+        padding: 0
+        padding-top: 14px
+        padding-bottom: 10px
+        text-align: center
+        box-sizing: border-box
         text-decoration: none
         background: #104599
         border-radius: 10px
         font-family: "Open Sans", sans-serif
         font-style: normal
-        font-weight: lighter
-        font-size: 19px
-        line-height: 26px
+        font-weight: normal
+        font-size: 14px
+        line-height: 19px
         color: #EDEDED
         transition: box-shadow 0.3s
         &:hover
           box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25)
         img
-          transform: translateY(+7px)
+          transform: translateY(0px)
           margin-right: 25px
-          width: 33px
-          height: 28px
+          width: 29px
+          height: 25px
     &__right
-      padding: 22px 0
+      padding: 0
       width: 362px
       height: 334px
       box-sizing: border-box
@@ -1290,7 +1323,7 @@ body
     &__header
       font-family: "Open Sans", sans-serif
       font-style: normal
-      font-weight: lighter
+      font-weight: normal
       font-size: 30px
       line-height: 41px
       color: #104599
@@ -1304,90 +1337,47 @@ body
         width: 229px
         height: 280px
         background: #104599
-        img
+        >img
           width: 229px
           height: 150px
-        p
-          margin-left: 20px
-          margin-top: 20px
-          margin-right: 20px
-          font-family: Helvetica, sans-serif
-          font-style: normal
-          font-weight: normal
-          font-size: 14px
-          line-height: 16px
-          color: #FFFFFF
-        span
-          position: absolute
-          bottom: 20px
-          left: 20px
-          font-family: Helvetica, sans-serif
-          font-style: normal
-          font-weight: lighter
-          font-size: 14px
-          line-height: 16px
-          color: #FFFFFF
-          img
-            width: 14px
-            height: 11px
-            margin-left: 10px
-  .section14
-    margin-top: 100px
-    &__header
-      font-family: "Open Sans", sans-serif
-      font-style: normal
-      font-weight: lighter
-      font-size: 30px
-      line-height: 41px
-      color: #104599
-    &__content
-      &__head
-        margin-top: 30px
-        font-family: "Open Sans", sans-serif
-        font-style: normal
-        font-weight: normal
-        font-size: 24px
-        line-height: 33px
-        color: #313131
-      &__list
-        height: 400px
-        margin-top: 30px
-        display: flex
-        flex-direction: column
-        flex-wrap: wrap
-        &.second
-          height: 260px
-        &.third
-          height: 300px
-        &__item
-          background: no-repeat top left url("../img/check.png")
-          width: 360px
-          margin-right: 30px
-          margin-top: 10px
-          padding-left: 70px
-          box-sizing: border-box
-          font-family: "Open Sans", sans-serif
-          font-style: normal
-          font-weight: lighter
-          font-size: 14px
-          line-height: 19px
-          color: #313131
+        &__bottom
+          height: 130px
+          padding: 20px 40px 32px 20px
+          display: flex
+          flex-direction: column
+          justify-content: space-between
+          p
+            font-family: Helvetica, sans-serif
+            font-style: normal
+            font-weight: normal
+            font-size: 14px
+            line-height: 16px
+            color: #FFFFFF
+          span
+            font-family: Helvetica, sans-serif
+            font-style: normal
+            font-weight: normal
+            font-size: 14px
+            line-height: 16px
+            color: #FFFFFF
+            img
+              margin-left: 10px
   .section15
-    margin-top: 30px
-    margin-bottom: 150px
+    margin-top: 100px
+    margin-bottom: 100px
     display: flex
     flex-direction: row
     justify-content: space-between
-    align-items: center
+    align-items: start
     &__left
       width: 360px
       display: flex
       flex-direction: column
       p
-        margin-top: 25px
+        margin-top: 17px
         font-family: "Open Sans", sans-serif
         font-style: normal
-        font-weight: lighter
+        font-weight: normal
         font-size: 24px
         line-height: 33px
         color: #104599
@@ -1395,23 +1385,33 @@ body
         margin-top: 30px
         font-family: Helvetica, sans-serif
         font-style: normal
-        font-weight: lighter
-        font-size: 24px
-        line-height: 33px
+        font-weight: normal
+        font-size: 18px
+        line-height: 24px
         color: #313131
         transition: color .3s
         &:hover
           color: #104599
           cursor: pointer
-      &__tel:nth-child(3)
+      &__tel2
         margin-top: 5px
+        font-family: Helvetica, sans-serif
+        font-style: normal
+        font-weight: normal
+        font-size: 18px
+        line-height: 24px
+        color: #313131
+        transition: color .3s
+        &:hover
+          color: #104599
+          cursor: pointer
       &__mail
         margin-top: 5px
         font-family: Helvetica, sans-serif
         font-style: normal
-        font-weight: lighter
-        font-size: 24px
-        line-height: 33px
+        font-weight: normal
+        font-size: 18px
+        line-height: 24px
         color: #313131
         transition: color .3s
         &:hover
@@ -1426,25 +1426,24 @@ body
     &__right
       width: 360px
       height: 420px
-      background: #E9E9E9
+      background: inherit
       border-radius: 10px
-      padding: 45px 20px
+      padding: 0
       box-sizing: border-box
       form
         display: flex
         flex-direction: column
-        label:nth-child(4)
-          input
-            padding-bottom: 40px
         label
+          margin: 0
           input
-            margin-bottom: 15px
+            margin-bottom: 5px
             border: none
+            border-bottom: 1px solid #104599
             width: 100%
             padding: 17px 32px
             box-sizing: border-box
             background-color: #FFFFFF
-            border-radius: 10px
+            border-radius: 0
             font-family: Helvetica, sans-serif
             font-style: normal
             font-weight: normal
@@ -1452,6 +1451,7 @@ body
             line-height: 16px
             color: #707070
         button
+          margin-top: 30px
           border: 2px solid #104599
           border-radius: 10px
           padding: 13px 0
@@ -1466,8 +1466,9 @@ body
           &:hover
             background: #104599
             color: #FFFFFF
+//////////////////////////////////////////   750    /////////////////////////////////////////////////////
 @media (max-width: 750px)
-  .container
+  .containerMy
     width: 360px
   .header
     &__top
@@ -1479,12 +1480,11 @@ body
         line-height: 28px
         padding: 170px 0 42px 0
         text-align: center
-        font-weight: lighter
+        font-weight: normal
         color: #104599
     &__bottom
       margin-top: 30px
       width: 360px
-      //margin-top: 10px
       display: flex
       flex-direction: column
       justify-content: space-between
@@ -1502,7 +1502,7 @@ body
       width: 90%
       font-family: "Open Sans", sans-serif
       font-style: normal
-      font-weight: lighter
+      font-weight: normal
       font-size: 24px
       line-height: 29px
       text-align: center
@@ -1533,21 +1533,27 @@ body
         justify-content: space-between
         width: 360px
         p
-          width: 289px
-          margin-left: 0
-          margin-top: 0
-          font-family: "Open Sans", sans-serif
+          box-sizing: border-box
+          margin-left: 21px
+          margin-bottom: 0
+          font-family: 'Open Sans', sans-serif
           font-style: normal
-          font-weight: lighter
+          font-weight: normal
           font-size: 14px
           line-height: 19px
           color: #313131
+          span
+            font-size: 14px
+            line-height: 19px
+            width: 300px
+            font-family: 'Open Sans', sans-serif
+            font-weight: bold
   .section2
     margin-top: 70px
     &__header
       font-family: "Open Sans", sans-serif
       font-style: normal
-      font-weight: lighter
+      font-weight: normal
       font-size: 24px
       line-height: 33px
       text-align: center
@@ -1579,7 +1585,7 @@ body
           margin-top: 10px
           font-family: "Open Sans", sans-serif
           font-style: normal
-          font-weight: lighter
+          font-weight: normal
           font-size: 11px
           line-height: 15px
           color: #FFFFFF
@@ -1597,7 +1603,7 @@ body
           text-align: center
           font-family: "Open Sans", sans-serif
           font-style: normal
-          font-weight: lighter
+          font-weight: normal
           font-size: 14px
           line-height: 19px
           color: #E4E4E4
@@ -1609,7 +1615,7 @@ body
     &__header
       font-family: "Open Sans", sans-serif
       font-style: normal
-      font-weight: lighter
+      font-weight: normal
       font-size: 24px
       line-height: 33px
       text-align: center
@@ -1650,7 +1656,7 @@ body
     &__header
       font-family: "Open Sans", sans-serif
       font-style: normal
-      font-weight: lighter
+      font-weight: normal
       font-size: 24px
       line-height: 33px
       color: #104599
@@ -1670,7 +1676,7 @@ body
         box-sizing: border-box
         font-family: "Open Sans", sans-serif
         font-style: normal
-        font-weight: lighter
+        font-weight: normal
         font-size: 14px
         line-height: 19px
         color: #313131
@@ -1695,7 +1701,7 @@ body
     &__header
       font-family: "Open Sans", sans-serif
       font-style: normal
-      font-weight: lighter
+      font-weight: normal
       font-size: 24px
       line-height: 33px
       color: #104599
@@ -1733,7 +1739,7 @@ body
       padding-top: 37px
       font-family: "Open Sans", sans-serif
       font-style: normal
-      font-weight: lighter
+      font-weight: normal
       font-size: 24px
       line-height: 33px
       color: #104599
@@ -1757,7 +1763,7 @@ body
           margin-left: 16px
           font-family: "Open Sans", sans-serif
           font-style: normal
-          font-weight: lighter
+          font-weight: normal
           font-size: 18px
           line-height: 25px
           color: #313131
@@ -1772,7 +1778,7 @@ body
         text-align: center
         font-family: "Open Sans", sans-serif
         font-style: normal
-        font-weight: lighter
+        font-weight: normal
         font-size: 24px
         line-height: 33px
         color: #104599
@@ -1782,7 +1788,7 @@ body
         margin-top: 15px
         font-family: "Open Sans", sans-serif
         font-style: normal
-        font-weight: lighter
+        font-weight: normal
         font-size: 18px
         line-height: 21px
         color: #313131
@@ -1851,7 +1857,7 @@ body
       text-align: center
       font-family: "Open Sans", sans-serif
       font-style: normal
-      font-weight: lighter
+      font-weight: normal
       font-size: 24px
       line-height: 33px
       color: #104599
@@ -1888,7 +1894,7 @@ body
           margin-top: 20px
           font-family: "Open Sans", sans-serif
           font-style: normal
-          font-weight: lighter
+          font-weight: normal
           font-size: 14px
           line-height: 19px
           color: #313131
@@ -1899,7 +1905,7 @@ body
       text-align: center
       font-family: "Open Sans", sans-serif
       font-style: normal
-      font-weight: lighter
+      font-weight: normal
       font-size: 24px
       line-height: 33px
       color: #104599
@@ -1939,7 +1945,7 @@ body
           text-align: center
           font-family: "Open Sans", sans-serif
           font-style: normal
-          font-weight: lighter
+          font-weight: normal
           font-size: 14px
           line-height: 19px
           color: #313131
@@ -1948,7 +1954,7 @@ body
     &__header
       font-family: "Open Sans", sans-serif
       font-style: normal
-      font-weight: lighter
+      font-weight: normal
       font-size: 24px
       line-height: 33px
       text-align: center
@@ -1988,7 +1994,7 @@ body
           text-align: center
           font-family: "Open Sans", sans-serif
           font-style: normal
-          font-weight: lighter
+          font-weight: normal
           font-size: 19px
           line-height: 22px
           color: #313131
@@ -2018,7 +2024,7 @@ body
         width: 360px
         font-family: "Open Sans", sans-serif
         font-style: normal
-        font-weight: lighter
+        font-weight: normal
         font-size: 24px
         line-height: 33px
         text-align: center
@@ -2028,7 +2034,7 @@ body
         margin-top: 22px
         font-family: "Open Sans", sans-serif
         font-style: normal
-        font-weight: lighter
+        font-weight: normal
         font-size: 14px
         line-height: 17px
         text-align: center
@@ -2038,7 +2044,7 @@ body
         margin-top: 20px
         font-family: "Open Sans", sans-serif
         font-style: normal
-        font-weight: lighter
+        font-weight: normal
         font-size: 14px
         line-height: 17px
         text-align: center
@@ -2053,7 +2059,7 @@ body
         border-radius: 10px
         font-family: "Open Sans", sans-serif
         font-style: normal
-        font-weight: lighter
+        font-weight: normal
         font-size: 19px
         line-height: 26px
         color: #EDEDED
@@ -2092,7 +2098,7 @@ body
     &__header
       font-family: "Open Sans", sans-serif
       font-style: normal
-      font-weight: lighter
+      font-weight: normal
       font-size: 24px
       line-height: 33px
       text-align: center
@@ -2133,7 +2139,7 @@ body
           left: 20px
           font-family: Helvetica, sans-serif
           font-style: normal
-          font-weight: lighter
+          font-weight: normal
           font-size: 14px
           line-height: 16px
           color: #FFFFFF
@@ -2149,7 +2155,7 @@ body
     &__header
       font-family: "Open Sans", sans-serif
       font-style: normal
-      font-weight: lighter
+      font-weight: normal
       font-size: 24px
       line-height: 33px
       text-align: center
@@ -2165,7 +2171,7 @@ body
         margin-top: 30px
         font-family: "Open Sans", sans-serif
         font-style: normal
-        font-weight: lighter
+        font-weight: normal
         font-size: 24px
         line-height: 33px
         color: #313131
@@ -2189,7 +2195,7 @@ body
           box-sizing: border-box
           font-family: "Open Sans", sans-serif
           font-style: normal
-          font-weight: lighter
+          font-weight: normal
           font-size: 14px
           line-height: 19px
           color: #313131
@@ -2210,7 +2216,7 @@ body
         margin-top: 25px
         font-family: "Open Sans", sans-serif
         font-style: normal
-        font-weight: lighter
+        font-weight: normal
         font-size: 24px
         line-height: 33px
         color: #104599
@@ -2218,7 +2224,7 @@ body
         margin-top: 30px
         font-family: Helvetica, sans-serif
         font-style: normal
-        font-weight: lighter
+        font-weight: normal
         font-size: 24px
         line-height: 33px
         color: #313131
@@ -2232,7 +2238,7 @@ body
         margin-top: 5px
         font-family: Helvetica, sans-serif
         font-style: normal
-        font-weight: lighter
+        font-weight: normal
         font-size: 24px
         line-height: 33px
         color: #313131
