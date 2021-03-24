@@ -1,0 +1,86 @@
+.header__top {
+  background: no-repeat right center url(../img/telecommunications.png);
+}
+.header__top p:nth-child(1) {
+  width: 600px;
+}
+.header__top p:nth-child(2) br:nth-child(1) {
+  display: none;
+}
+.header__top p:nth-child(2) br:nth-child(3) {
+  display: none;
+}
+.header__bottom__item:nth-child(1) img {
+  width: 70px;
+  height: 70px;
+}
+.header__bottom__item:nth-child(2) img {
+  width: 69px;
+  height: 70px;
+}
+.header__bottom__item:nth-child(3) img {
+  width: 69px;
+  height: 77px;
+}
+
+.section1-2__list {
+  height: 770px;
+}
+
+@media (max-width: 1170px) {
+  .header__top {
+    background-size: 360px 246px;
+  }
+  .header__top p:nth-child(2) br:nth-child(1) {
+    display: block;
+  }
+  .header__top p:nth-child(2) br:nth-child(3) {
+    display: block;
+  }
+  .header__bottom__item:nth-child(1) img {
+    width: 50px;
+    height: 50px;
+  }
+  .header__bottom__item:nth-child(2) img {
+    width: 49px;
+    height: 50px;
+  }
+  .header__bottom__item:nth-child(3) img {
+    width: 45px;
+    height: 50px;
+  }
+  .header__bottom__item:nth-child(3) p {
+    margin-top: 20px;
+  }
+
+  .section1-2__list {
+    height: 740px;
+  }
+}
+@media (max-width: 750px) {
+  .header__top {
+    background: none;
+  }
+  .header__top p:nth-child(1) {
+    width: 100%;
+  }
+  .header__bottom__item:nth-child(3) p {
+    margin-top: 0;
+  }
+  .header__bottom__item:nth-child(2) p {
+    margin-left: 49px;
+  }
+  .header__bottom__item:nth-child(3) p {
+    margin-left: 56px;
+  }
+  .header__bottom__item:nth-child(1) img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .section1-2__list {
+    height: auto;
+  }
+}
+
+/*# sourceMappingURL=telecommunications.css.map */
