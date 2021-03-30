@@ -30,5 +30,5 @@ document.querySelector(".modal2").addEventListener('click', () => {
     modal2.open()
 })
 
-modal1.setContent('<img class="modal-IMG" src="img/section9__content11.png" alt="content">')
-modal2.setContent('<img class="modal-IMG" src="img/section9__content21.png" alt="content">')
+modal1.setContent('<img class="modal-IMG" src="img/lohman.png" alt="content">')
+modal2.setContent('<img class="modal-IMG" src="img/tubex.png" alt="content">')

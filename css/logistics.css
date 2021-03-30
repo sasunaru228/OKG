@@ -39,7 +39,11 @@
   }
 
   .section1-2__list {
-    height: 630px;
+    height: 640px;
+  }
+
+  .section2__content .content2__2 {
+    margin-top: 20px;
   }
 }
 @media (max-width: 750px) {
@@ -48,9 +52,13 @@
   }
   .header__bottom__item:nth-child(3) p {
     margin-top: 0;
+    margin-left: 48px;
   }
   .header__bottom__item:nth-child(2) p {
-    margin-left: 55px;
+    margin-left: 53px;
+  }
+  .header__bottom__item:nth-child(1) p {
+    margin-left: 48px;
   }
 
   .section1-2__list {
