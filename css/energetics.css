@@ -1,0 +1,99 @@
+.header__top {
+  background: no-repeat right center url(../img/energetics.png);
+}
+.header__bottom__item:nth-child(1) img {
+  width: 69px;
+  height: 69px;
+}
+.header__bottom__item:nth-child(2) img {
+  width: 68px;
+  height: 57px;
+}
+.header__bottom__item:nth-child(3) img {
+  width: 70px;
+  height: 69px;
+}
+
+.section1-2__list {
+  height: 1150px;
+}
+.header__top p:nth-child(2) {
+  margin-top: 80px;
+}
+.section2__content .content2__2 {
+  margin-top: 34px;
+}
+.br33 {
+  display: none;
+}
+
+@media (max-width: 1170px) {
+  .header__top {
+    background-size: 360px 246px;
+  }
+  .header__bottom__item:nth-child(1) img {
+    width: 48px;
+    height: 48px;
+  }
+  .header__bottom__item:nth-child(2) img {
+    width: 48px;
+    height: 40px;
+  }
+  .header__bottom__item:nth-child(3) img {
+    width: 46px;
+    height: 45px;
+  }
+  .header__bottom__item:nth-child(1) p {
+    margin-top: 22px;
+  }
+  .header__bottom__item:nth-child(2) p {
+    margin-top: 29px;
+  }
+  .header__bottom__item:nth-child(3) p {
+    margin-top: 25px;
+  }
+
+  .section1-2__list {
+    height: 1035px;
+  }
+  .header__top p:nth-child(2) {
+    margin-top: 40px;
+  }
+  .section2__content .content2__2 {
+    margin-top: 15px;
+  }
+  .br33 {
+    display: none;
+  }
+}
+@media (max-width: 750px) {
+  .header__top {
+    background: none;
+  }
+  .header__bottom__item:nth-child(3) p {
+    margin-top: 0;
+    margin-left: 45px;
+  }
+  .header__bottom__item:nth-child(2) p {
+    margin-left: 43px;
+    margin-top: 0;
+  }
+  .header__bottom__item:nth-child(1) p {
+    margin-left: 46px;
+    margin-top: 0;
+  }
+
+  .section1-2__list {
+    height: auto;
+  }
+  .header__top p:nth-child(2) {
+    margin-top: 70px;
+  }
+  .br750 {
+    display: none;
+  }
+  .br33 {
+    display: block;
+  }
+}
+
