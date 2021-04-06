@@ -1,0 +1,93 @@
+.header__top {
+  background: no-repeat right center url(../img/selfCare.png);
+}
+.header__bottom__item:nth-child(1) img {
+  width: 68px;
+  height: 42px;
+}
+.header__bottom__item:nth-child(2) img {
+  width: 70px;
+  height: 70px;
+}
+.header__bottom__item:nth-child(3) img {
+  width: 67px;
+  height: 67px;
+}
+
+.section1-2__list {
+  height: 1035px;
+}
+
+.section2__content .content2__2 {
+  margin-top: 20px;
+}
+
+@media (max-width: 1170px) {
+  .header__top {
+    background-size: 360px 246px;
+  }
+  .header__bottom__item:nth-child(1) img {
+    width: 52px;
+    height: 32px;
+  }
+  .header__bottom__item:nth-child(2) img {
+    width: 49px;
+    height: 49px;
+  }
+  .header__bottom__item:nth-child(3) img {
+    width: 45px;
+    height: 45px;
+  }
+  .header__bottom__item:nth-child(1) p {
+    margin-top: 37px;
+  }
+  .header__bottom__item:nth-child(2) p {
+    margin-top: 20px;
+  }
+  .header__bottom__item:nth-child(3) p {
+    margin-top: 24px;
+  }
+
+  .section1-2__list {
+    height: 800px;
+  }
+
+  .section2__content .content2__2 {
+    margin-top: 5px;
+  }
+  .header__top p:nth-child(2) {
+    margin-top: 10px;
+  }
+  .section1-2__list {
+    height: 1030px;
+  }
+}
+@media (max-width: 750px) {
+  .header__top {
+    background: none;
+  }
+  .header__bottom__item:nth-child(3) p {
+    margin-top: 0;
+    margin-left: 48px;
+  }
+  .header__bottom__item:nth-child(2) p {
+    margin-top: 0;
+    margin-left: 51px;
+  }
+  .header__bottom__item:nth-child(1) p {
+    margin-top: 0;
+    margin-left: 48px;
+  }
+  .header__bottom__item:nth-child(3) img {
+    width: 52px;
+    height: 52px;
+  }
+
+  .section1-2__list {
+    height: auto;
+  }
+  .header__top p:nth-child(2) {
+    margin-top: 70px;
+  }
+}
+
