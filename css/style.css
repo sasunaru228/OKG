@@ -64,7 +64,7 @@ body {
   font-size: 40px;
   line-height: 46px;
   color: #104599;
-  padding: 331px 0 100px 0;
+  padding: 160px 0 100px 0;
   width: 580px;
 }
 
@@ -866,7 +866,7 @@ body {
 .section15__right {
   width: 570px;
   height: 425px;
-  padding: 45px 70px;
+  padding: 25px 70px;
   box-sizing: border-box;
 }
 .section15__right form {
@@ -1745,7 +1745,7 @@ body {
     flex-direction: column;
   }
   .section15__left p {
-    margin-top: 17px;
+    margin-top: 0;
     font-family: "Open Sans", sans-serif;
     font-style: normal;
     font-weight: normal;

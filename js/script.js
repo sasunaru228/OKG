@@ -98,3 +98,69 @@ document.querySelector("#modal8_4_close").addEventListener('click', () => {
 
 let modal8_4_content = document.querySelector(' #modal8_4_content');
 modal8_4.setContent(modal8_4_content);
+
+
+
+// modal 10.1
+
+let modal10_1 = new tingle.modal({
+
+})
+
+document.querySelector("#modal10_1_link").addEventListener('click', () => {
+    modal10_1.open()
+})
+document.querySelector("#modal10_1_close").addEventListener('click', () => {
+    modal10_1.close()
+})
+
+let modal10_1_content = document.querySelector('#modal10_1_content');
+modal10_1.setContent(modal10_1_content);
+
+// modal 10.2
+
+let modal10_2 = new tingle.modal({
+
+})
+
+document.querySelector("#modal10_2_link").addEventListener('click', () => {
+    modal10_2.open()
+})
+document.querySelector("#modal10_2_close").addEventListener('click', () => {
+    modal10_2.close()
+})
+
+let modal10_2_content = document.querySelector('#modal10_2_content');
+modal10_2.setContent(modal10_2_content);
+
+// modal 10.3
+
+let modal10_3 = new tingle.modal({
+
+})
+
+document.querySelector("#modal10_3_link").addEventListener('click', () => {
+    modal10_3.open()
+})
+document.querySelector("#modal10_3_close").addEventListener('click', () => {
+    modal10_3.close()
+})
+
+let modal10_3_content = document.querySelector('#modal10_3_content');
+modal10_3.setContent(modal10_3_content);
+
+// modal 10.4
+
+let modal10_4 = new tingle.modal({
+
+})
+
+document.querySelector("#modal10_4_link").addEventListener('click', () => {
+    modal10_4.open()
+})
+document.querySelector("#modal10_4_close").addEventListener('click', () => {
+    modal10_4.close()
+})
+
+let modal10_4_content = document.querySelector('#modal10_4_content');
+modal10_4.setContent(modal10_4_content);
