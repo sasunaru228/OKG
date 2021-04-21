@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/startup.css">
     <link rel="stylesheet" href="css/сonsulting.css">
+    <link rel="stylesheet" href="css/modalOKG.css">
 </head>
 <body>
     <div class="containerMy">
@@ -182,36 +183,36 @@
         <section class="section10">
             <p class="section10__header">Команда юристов</p>
             <div class="section10__content">
-                <div class="section10__content__item">
+                <div id="modal10_1_link" class="section10__content__item">
                     <img src="img/section10__content1.png" alt="item">
                     <div class="section10__content__item__right">
                         <p class="section10__content__item__right__1">Юлия Арустамова</p>
                         <p class="section10__content__item__right__2">Руководитель практики «Юридическое сопровождение бизнеса»</p>
-                        <span onclick="location.href = '/team/yuliya-arustamova/'">Читать подробнее</span>
+                        <span>Читать подробнее</span>
                     </div>
                 </div>
-                <div class="section10__content__item">
+                <div id="modal10_2_link" class="section10__content__item">
                     <img src="img/section10__content2.png" alt="item">
                     <div class="section10__content__item__right">
                         <p class="section10__content__item__right__1">Ксения Жаворонкова</p>
                         <p class="section10__content__item__right__2">Руководитель юридических проектов практики</p>
-                        <span onclick="location.href = '/team/all_team/kseniya_zhavoronkova.php'">Читать подробнее</span>
+                        <span>Читать подробнее</span>
                     </div>
                 </div>
-                <div class="section10__content__item">
+                <div id="modal10_3_link" class="section10__content__item">
                     <img src="img/section10__content3.png" alt="item">
                     <div class="section10__content__item__right">
                         <p class="section10__content__item__right__1">Анастасия Крусь</p>
                         <p class="section10__content__item__right__2">Юрисконсульт практики</p>
-                        <span onclick="location.href = '/team/all_team/anastasya_krus.php'">Читать подробнее</span>
+                        <span>Читать подробнее</span>
                     </div>
                 </div>
-                <div class="section10__content__item">
+                <div id="modal10_4_link" class="section10__content__item">
                     <img src="img/section10__content4.png" alt="item">
                     <div class="section10__content__item__right">
                         <p class="section10__content__item__right__1">Анжелика Шахматова</p>
                         <p class="section10__content__item__right__2">Юрисконсульт практики</p>
-                        <span onclick="location.href = '/team/all_team/angelika_shakhmatova.php'">Читать подробнее</span>
+                        <span>Читать подробнее</span>
                     </div>
                 </div>
             </div>
@@ -243,7 +244,7 @@
                 <p>Собственный телеграм-канал</p>
                 <p>Публикуем актуальные новости для юристов, финансистов и бухгалтеров.</p>
                 <p>Информация на 100% прикладная и полезная <br> для вашей ежедневной практики.</p>
-                <a href="https://t.me/s/Legal_services_to_business"><img src="img/telegram1.png" alt="telegram">Подписаться на новости</a>
+                <a target="_blank" href="https://t.me/s/Legal_services_to_business"><img src="img/telegram1.png" alt="telegram">Подписаться на новости</a>
             </div>
             <div class="section12__right splide">
 
@@ -272,21 +273,21 @@
             <div class="section13__content">
                 <div class="section13__content__item">
                     <img src="img/section13__content1.png" alt="content1">
-                    <div class="section13__content__item__bottom" onclick="location.href='/press-centr/news/idnovye-pravila-podtverzhdeniya-fakta-nalichiya-litsenzii/'">
+                    <div class="section13__content__item__bottom" onclick="window.open('/press-centr/news/idnovye-pravila-podtverzhdeniya-fakta-nalichiya-litsenzii/')">
                         <p>Новые правила подтверждения факта наличия лицензии</p>
                         <span>Читать <img src="img/section13__arrow.svg" alt="arrow"></span>
                     </div>
                 </div>
                 <div class="section13__content__item">
                     <img src="img/section13__content2.png" alt="content2">
-                    <div class="section13__content__item__bottom"  onclick="location.href='/press-centr/publication/3857/'">
+                    <div class="section13__content__item__bottom"  onclick="window.open('/press-centr/publication/3857/')">
                         <p>Что нам стоит дом <br class="br22"> не строить</p>
                         <span>Читать <img src="img/section13__arrow.svg" alt="arrow"></span>
                     </div>
                 </div>
                 <div class="section13__content__item">
                     <img src="img/section13__content3.png" alt="content3">
-                    <div class="section13__content__item__bottom"  onclick="location.href='/press-centr/news/idpravovaya-podderzhka-sootechestvennikov-za-rubezhom/'">
+                    <div class="section13__content__item__bottom"  onclick="window.open('/press-centr/news/idpravovaya-podderzhka-sootechestvennikov-za-rubezhom/')">
                         <p>Правовая поддержка соотечественников <br class="br22"> за рубежом</p>
                         <span>Читать <img src="img/section13__arrow.svg" alt="arrow"></span>
                     </div>
@@ -327,6 +328,89 @@
         </section>
 
     </div>
+
+    <div class="modal10" id="modal10_1_content">
+        <div class="modal10__content">
+            <span id="modal10_1_close" class="modal10__content__close"></span>
+            <div class="modal10__content__img">
+                <img src="img/modal10_1.png" alt="photo">
+            </div>
+            <div class="modal10__content__text">
+                <p>Юлия Арустамова</p>
+                <p>Руководитель практики<br> «Юридическое сопровождение бизнеса»</p>
+                <span></span>
+                <p>
+                    <strong>Квалификация по направлениям:</strong> правовое сопровождение деятельности иностранных компаний<br class="br22"> в России, недвижимость, антимонопольное право, международная правовая помощь<br class="br11"> по гражданским<br class="br33"> и административным делам, правовое сопровождение девелоперских проектов, структурирование<br class="br22"> и сопровождение сделок, структурирование<br class="br22"> бизнес-процессов<br class="br33"> и налоговая оптимизация.
+                    <br><br>
+                    <strong>Образование:</strong> Московская Государственная Юридическая Академия имени О. Е. Кутафина,<br class="br11"><br class="br22"> г. Москва
+                    <br><br>
+                    <strong>Дополнительное образование (курсы, обучение, повышение квалификации):</strong> «Рынок ценных бумаг», «Основы рынка ценных бумаг», «Правовой аудит»,<br class="br22"><br class="br33"> «Due Diligence», «Антимонопольный комплаенс», «Правовая охрана результатов интеллектуальной собственности компании»; «Корпоративное право», «Международное налогообложение и налоговое планирование», OffshoreArlet 2015<br class="br33"> A FINANCIAL INTELLIGENCE & INVESTIGATIONS EVENT, «Борьба<br class="br11"><br class="br22"><br class="br33"> с международной налоговой преступностью», «Бухгалтерский учет для юристов».
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal10" id="modal10_2_content">
+        <div class="modal10__content">
+            <span id="modal10_2_close" class="modal10__content__close"></span>
+            <div class="modal10__content__img">
+                <img src="img/modal10_2.png" alt="photo">
+            </div>
+            <div class="modal10__content__text">
+                <p>Ксения Жаворонкова</p>
+                <p>Руководитель юридических проектов практики<br> “Юридическое сопровождение бизнеса”</p>
+                <span></span>
+                <p>
+                    <strong>Квалификация по направлениям:</strong> проведение правового аудита (Due Diligence); структурирование сделок: инвестиционные, девелоперские сделки,<br class="br22"> сделки<br class="br33"> с недвижимостью; ведение судебных<br class="br22"> процессов; осуществление абонентского<br class="br22"> сопровождения Клиентов в области<br class="br22"> интеллектуальной собственности, промышленного производства и ритейла, компаний<br class="br11"> с иностранным элементом; консультирование Клиентов по вопросам корпоративного<br class="br11"> и коммерческого права, трудового<br class="br22"> права, подготовки и реализации международных<br class="br22"> и российских контрактов; осуществление<br class="br22"> корпоративной и долговой реструктуризации группы компаний;
+                    <br><br>
+                    <strong>Образование:</strong> Санкт-Петербургский экономический университет по направлению подготовки «Юриспруденция»<br class="br33"> (магистратура).
+                    <br><br>
+                    <strong>Дополнительное образование (курсы, обучение, повышение квалификации):</strong> «Digital Law Russia, юридическое сопровождение IT-Бизнеса», Business Consulting Academy; «Юридический Due Diligence: цели, методы, и эффективные технологии», АНО ДПО «Юридический институт<br class="br11"> «М-Логос», программа «Трудовое право и кадровое делопроизводство: исправляем ошибки<br class="br11"> и готовимся к 2020г.», «Главбух семинар», «Реформа земельного<br class="br33"> и градостроительного законодательства: приобретение публичных земель, оборот земельных участков и комментарий изменений законодательства».
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal10" id="modal10_3_content">
+        <div class="modal10__content">
+            <span id="modal10_3_close" class="modal10__content__close"></span>
+            <div class="modal10__content__img">
+                <img src="img/modal10_3.png" alt="photo">
+            </div>
+            <div class="modal10__content__text">
+                <p>Анастасия Крусь</p>
+                <p>Юрисконсульт практики <br> «Юридическое сопровождение бизнеса»</p>
+                <span></span>
+                <p>
+                    <strong>Квалификация по направлениям:</strong><br class="br22"> структурирование и сопровождение сделок; представление интересов в суде с участием<br class="br22"> иностранных компаний; составление внутренней документации<br class="br11"> для представительств иностранных компаний; консультирование по вопросам<br class="br22"> соблюдения антимонопольного и административного,<br class="br22"><br class="br33"> в том числе валютного законодательств; защита нарушенных прав граждан РФ<br class="br33"> за рубежом и иностранных граждан и лиц<br class="br33"> без гражданства<br class="br11"> на территории РФ.
+                    <br><br>
+                    <strong>Образование:</strong> Санкт-Петербургский<br class="br22"> государственный университет<br class="br33"> по направлению «Международное право»<br class="br33"> (магистратура).
+                    <br><br>
+                    <strong>Дополнительное образование (курсы, обучение, повышение квалификации):</strong> «Юрист международной компании», «Ответственность в международном праве», «Регулирование внешнеторговой деятельности», Серия курсов: European Business Law; Understanding the Fundamentals, Doing Business in Europe, Competing in Europe, «Международные финансы», «Юридическое оформление инвестиционных идей».
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal10" id="modal10_4_content">
+        <div class="modal10__content">
+            <span id="modal10_4_close" class="modal10__content__close"></span>
+            <div class="modal10__content__img">
+                <img src="img/modal10_4.png" alt="photo">
+            </div>
+            <div class="modal10__content__text">
+                <p>Анжелика Шахматова</p>
+                <p>Юрисконсульт практики<br> «Юридическое сопровождение бизнеса»</p>
+                <span></span>
+                <p>
+                    <strong>Квалификация по направлениям:</strong> юридическое сопровождение деятельности коммерческих<br class="br11"><br class="br22"> и некоммерческих организаций; структурирование<br class="br22"> сделок<br class="br33"> с недвижимостью; взаимодействие<br class="br11"><br class="br22"><br class="br33"> с государственными органами<br class="br33"> и должностными лицами<br class="br22"> в том числе<br class="br33"> по получению лицензий; регистрация объектов интеллектуальной собственности; открытие расчетных счетов<br class="br11"><br class="br22"> (в т.ч. в оффшорах) на территории иностранных юрисдикций; представительство интересов<br class="br11"><br class="br33"> в судебных процессах; досудебное урегулирование споров; консультирование<br class="br33"> по вопросам административного, корпоративного, трудового и договорного права.
+                    <br><br>
+                    <strong>Образование:</strong> Северо-Западный филиал Российской академии правосудия по направлению подготовки «Юриспруденция» (магистратура).
+                </p>
+            </div>
+        </div>
+    </div>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/tingle/tingle.js"></script>
     <script src="slider/js/splide.js"></script>

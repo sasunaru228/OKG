@@ -25,15 +25,6 @@
   align-items: flex-start;
   width: 1170px;
 }
-.modal8__header {
-  font-family: Open Sans, sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 40px;
-  line-height: 54px;
-  color: #104599;
-  margin-bottom: 16px;
-}
 .modal8__content {
   position: relative;
   box-sizing: border-box;
@@ -166,15 +157,6 @@
     flex-direction: column;
     align-items: flex-start;
     width: 750px;
-  }
-  .modal8__header {
-    font-family: Open Sans, sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 30px;
-    line-height: 41px;
-    color: #104599;
-    margin-bottom: 19px;
   }
   .modal8__content {
     position: relative;
@@ -317,16 +299,6 @@
     flex-direction: column;
     align-items: flex-start;
     width: 360px;
-  }
-  .modal8__header {
-    font-family: Open Sans, sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 33px;
-    color: #104599;
-    margin-bottom: 19px;
-    text-align: center;
   }
   .modal8__content {
     position: relative;
