@@ -17,6 +17,9 @@
 .section1-2__list {
   height: 660px;
 }
+.section2__content .content2__2 {
+  margin-top: 45px;
+}
 
 @media (max-width: 1170px) {
   .header__top {
@@ -43,7 +46,7 @@
   }
 
   .section2__content .content2__2 {
-    margin-top: 20px;
+    margin-top: 40px;
   }
 }
 @media (max-width: 750px) {
@@ -63,6 +66,9 @@
 
   .section1-2__list {
     height: auto;
+  }
+  .section2__content .content2__2 {
+    margin-top: 30px;
   }
 }
 

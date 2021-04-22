@@ -26,6 +26,9 @@
 .section1-2__list {
   height: 850px;
 }
+.section2__content .content2__2 {
+  margin-top: 70px;
+}
 
 @media (max-width: 1170px) {
   .header__top {
@@ -56,6 +59,9 @@
   .section1-2__list {
     height: 780px;
   }
+  .section2__content .content2__2 {
+    margin-top: 50px;
+  }
 }
 @media (max-width: 750px) {
   .header__top {
@@ -81,6 +87,9 @@
 
   .section1-2__list {
     height: auto;
+  }
+  .section2__content .content2__2 {
+    margin-top: 50px;
   }
 }
 

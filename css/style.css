@@ -141,34 +141,38 @@ body {
 }
 .section2__content {
   margin-top: 60px;
-  height: 570px;
+  height: 670px;
   display: flex;
   justify-content: space-between;
 }
 .section2__content .content1 {
   width: 570px;
-  height: 570px;
+  height: 670px;
   background: url("../img/photo1.png");
 }
 .section2__content .content2 {
   box-sizing: border-box;
   width: 570px;
-  height: 570px;
+  height: 670px;
   background: #104599;
-  padding: 74px 70px;
+  padding: 0 45px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
 }
 .section2__content .content2__1 {
-  margin-top: 30px;
+  margin-top: 20px;
   margin-bottom: 0;
   font-family: "Open Sans", sans-serif;
   font-style: normal;
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 19px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
   color: #FFFFFF;
 }
 .section2__content .content2__2 {
-  margin-top: 50px;
+  margin-top: 40px;
   margin-bottom: 0;
   text-align: right;
   font-family: "Open Sans", sans-serif;
@@ -177,8 +181,10 @@ body {
   font-size: 23px;
   line-height: 31px;
   color: #FFFFFF;
+  width: 100%;
 }
 .section2__content .content2__3 {
+  width: 100%;
   margin-bottom: 0;
   text-align: right;
   font-family: "Open Sans", sans-serif;
@@ -1057,38 +1063,44 @@ body {
   }
   .section2__content {
     margin-top: 30px;
-    height: 362px;
+    height: 500px;
     display: flex;
     justify-content: space-between;
   }
   .section2__content .content1 {
     width: 362px;
-    height: 362px;
+    height: 500px;
     background: url("../img/photo1.png");
-    background-size: 362px 362px;
+    /*background-size: 362px 500px;*/
+    background-size: cover;
   }
   .section2__content .content2 {
     box-sizing: border-box;
     width: 362px;
-    height: 362px;
+    height: 500px;
     background: #104599;
-    padding: 20px 20px;
+    padding: 0 23px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
   }
   .section2__content .content2 img {
     width: 76px;
     height: 27px;
   }
   .section2__content .content2__1 {
-    margin-top: 10px;
-    font-family: "Open Sans", sans-serif;
+    margin-top: 15px;
+    font-family: Open Sans, sans-serif;
     font-style: normal;
-    font-weight: 300;
-    font-size: 11px;
-    line-height: 15px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
     color: #FFFFFF;
   }
   .section2__content .content2__2 {
-    margin-top: 15px;
+    width: 100%;
+    margin-top: 20px;
     text-align: right;
     font-family: "Open Sans", sans-serif;
     font-style: normal;
@@ -1098,6 +1110,7 @@ body {
     color: #FFFFFF;
   }
   .section2__content .content2__3 {
+    width: 100%;
     margin-top: 5px;
     text-align: right;
     font-family: "Open Sans", sans-serif;
@@ -2025,7 +2038,7 @@ body {
   }
   .section2__content {
     margin-top: 30px;
-    height: 720px;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -2034,17 +2047,18 @@ body {
     width: 360px;
     height: 360px;
     background: url("../img/photo1.png");
-    background-size: 360px;
+    background-size: cover;
   }
   .section2__content .content2 {
+    box-sizing: border-box;
+    width: 360px;
+    height: 510px;
+    background: #104599;
+    padding: 0 22px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    box-sizing: border-box;
-    width: 360px;
-    height: 360px;
-    background: #104599;
-    padding: 20px 20px;
+    justify-content: center;
   }
   .section2__content .content2 img {
     width: 76px;
@@ -2055,14 +2069,14 @@ body {
     margin-top: 10px;
     font-family: "Open Sans", sans-serif;
     font-style: normal;
-    font-weight: 300;
-    font-size: 11px;
-    line-height: 15px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
     color: #FFFFFF;
   }
   .section2__content .content2__2 {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 30px;
     font-family: "Open Sans", sans-serif;
     font-style: normal;
     font-weight: bold;

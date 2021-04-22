@@ -25,10 +25,13 @@
   margin-top: 80px;
 }
 .section2__content .content2__1 {
-  margin-top: 40px;
+  margin-top: 20px;
 }
 .section1-2__list {
   height: 600px;
+}
+.section2__content .content2__2 {
+  margin-top: 70px;
 }
 
 @media (max-width: 1170px) {
@@ -62,7 +65,10 @@
     width: 380px;
   }
   .section2__content .content2__1 {
-    margin-top: 20px;
+    margin-top: 10px;
+  }
+  .section2__content .content2__2 {
+    margin-top: 50px;
   }
 }
 @media (max-width: 750px) {
@@ -94,6 +100,9 @@
   }
   .br33 {
     display: block;
+  }
+  .section2__content .content2__2 {
+    margin-top: 40px;
   }
 }
 

@@ -285,8 +285,12 @@
     background: none;
   }
 
+  #modal10_2_content {
+    margin-top: 200px;
+  }
+
   .tingle-modal-box__content {
-    padding-top: 62px;
+    padding-top: 200px;
     padding-bottom: 62px;
   }
 
